@@ -1,0 +1,112 @@
+
+
+.swiper {
+
+    padding-bottom: 50px !important;
+}
+
+
+
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  right: 0px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.swiper-slide {
+  width: 10rem;
+  height: 24rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: -1px 5px 15px #0000001f;
+  text-align: center;
+ /* opacity: 0.1;*/
+  transition: opacity 0.4s ease-in;
+}
+.swiper-slide span {
+    display: inline-block;
+    background: darkcyan;
+    border-radius: 0 50px 50px 0;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    color: #fff;
+}
+.swiper-slide h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    letter-spacing: 0.8px;
+    position: relative;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+@media screen and (min-width: 800px) {
+  .swiper-slide h3 {
+    font-size: 1.8rem;
+  }
+}
+.swiper-slide p {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+.swiper-slide .slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  width: 90%;
+}
+.swiper-slide--one {
+  background: #0f2027;
+  background: linear-gradient(to bottom, #2c536400, #203a4303, #0f2027cc);
+}
+
+/*.swiper-slide{
+  background: #000;
+  background: linear-gradient(to bottom, #2c536400, #203a4303, #0f2027cc), url("https://cdn.pixabay.com/photo/2023/03/12/20/58/ai-generated-7847847_1280.jpg") no-repeat 50% 50%/cover;
+}
+*/
+
+.swiper-slide-active {
+  display: grid;
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: -0.313rem;
+  text-align: center;
+  margin-top: 35px;
+  width: auto;
+}
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: 1.5rem;
+  height: 0.25rem;
+  background: #fff;
+}
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
